@@ -1,0 +1,19 @@
+{$articletitle|cat:"123"|capitalize} <br>
+{$testarr['dim']['name']} <br>
+{$articletitle|default:"no title"} <br>
+{if $articletitle eq '123'}
+welcome
+{else}
+welicl 2
+{/if}<br>
+
+{foreach item=article from=$artlist}
+{$article.title}<br>
+{/foreach}
+
+{$myobj->meth1(array('apple','shule'))} <br>
+
+{test width=150 height=200} <br>
+
+
+
